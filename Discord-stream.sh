@@ -26,7 +26,7 @@ pactl load-module module-loopback source=Virtual1.monitor sink=alsa_output.pci-0
 #pactl list sinks | grep Name: 
 
 #Unload Module
-#pactl unload-module $moduleID
+pactl unload-module $moduleID
 
 #262144
 #262145
@@ -56,4 +56,4 @@ pactl load-module module-loopback source=alsa_input.pci-0000_08_00.4.analog-ster
 pactl load-module module-loopback source=sink_vlc.monitor sink=sink_jnt latency_msec=5
 pactl load-module module-loopback source=sink_vlc.monitor sink=alsa_output.pci-0000_08_00.4.analog-stereo latency_msec=5
 
-pactl load-module module-remap-source master=sink_jnt.monitor source_name=source_jnt 
+pactl load-module module-remap-source master=sink_jnt source_name=source_jnt 
