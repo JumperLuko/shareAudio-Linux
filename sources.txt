@@ -1,0 +1,231 @@
+Source #41
+	State: RUNNING
+	Name: alsa_input.pci-0000_08_00.4.analog-stereo
+	Description: Starship/Matisse HD Audio Controller Analog Stereo
+	Driver: PipeWire
+	Sample Specification: s32le 2ch 48000Hz
+	Channel Map: front-left,front-right
+	Owner Module: 4294967295
+	Mute: no
+	Volume: front-left: 26214 /  40% / -23.88 dB,   front-right: 26214 /  40% / -23.88 dB
+	        balance 0.00
+	Base Volume: 6554 /  10% / -60.00 dB
+	Monitor of Sink: n/a
+	Latency: 0 usec, configured 0 usec
+	Flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY 
+	Properties:
+		object.path = "alsa:pcm:1:front:1:capture"
+		api.alsa.path = "front:1"
+		api.alsa.pcm.card = "1"
+		api.alsa.pcm.stream = "capture"
+		audio.channels = "2"
+		audio.position = "FL,FR"
+		device.routes = "3"
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "ALC892 Analog"
+		alsa.id = "ALC892 Analog"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "1"
+		alsa.card_name = "HD-Audio Generic"
+		alsa.long_card_name = "HD-Audio Generic at 0xfcb00000 irq 56"
+		alsa.driver_name = "snd_hda_intel"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		card.profile.device = "0"
+		device.id = "40"
+		factory.name = "api.alsa.pcm.source"
+		priority.driver = "1945"
+		priority.session = "1945"
+		media.class = "Audio/Source"
+		node.nick = "HD-Audio Generic"
+		node.name = "alsa_input.pci-0000_08_00.4.analog-stereo"
+		device.description = "Starship/Matisse HD Audio Controller Analog Stereo"
+		device.icon_name = "audio-input-microphone-analog"
+		device.bus = "pci"
+		device.bus_path = "pci-0000:08:00.4"
+		node.pause-on-idle = "false"
+		factory.id = "18"
+		client.id = "32"
+		node.driver = "true"
+		factory.mode = "split"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "41"
+		node.max-latency = "8192/48000"
+	Ports:
+		analog-input-front-mic: Front Microphone (priority: 8500, available)
+		analog-input-rear-mic: Rear Microphone (priority: 8200, not available)
+		analog-input-linein: Line In (priority: 8100, not available)
+	Active Port: analog-input-front-mic
+	Formats:
+		pcm
+
+Source #65588
+	State: RUNNING
+	Name: easyeffects_sink.monitor
+	Description: Monitor of EasyEffects Sink
+	Driver: PipeWire
+	Sample Specification: float32le 2ch 48000Hz
+	Channel Map: front-left,front-right
+	Owner Module: 4294967295
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor of Sink: easyeffects_sink
+	Latency: 0 usec, configured 0 usec
+	Flags: DECIBEL_VOLUME LATENCY 
+	Properties:
+		node.name = "easyeffects_sink"
+		device.description = "EasyEffects Sink"
+		factory.name = "support.null-audio-sink"
+		media.class = "Audio/Sink"
+		audio.position = "FL,FR"
+		monitor.channel-volumes = "true"
+		factory.id = "18"
+		client.id = "51"
+		node.driver = "true"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "52"
+	Formats:
+		pcm
+
+Source #53
+	State: RUNNING
+	Name: easyeffects_source
+	Description: EasyEffects Source
+	Driver: PipeWire
+	Sample Specification: float32le 2ch 48000Hz
+	Channel Map: front-left,front-right
+	Owner Module: 4294967295
+	Mute: no
+	Volume: front-left: 64507 /  98% / -0.41 dB,   front-right: 64507 /  98% / -0.41 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor of Sink: n/a
+	Latency: 0 usec, configured 0 usec
+	Flags: DECIBEL_VOLUME LATENCY 
+	Properties:
+		node.name = "easyeffects_source"
+		device.description = "EasyEffects Source"
+		factory.name = "support.null-audio-sink"
+		media.class = "Audio/Source/Virtual"
+		audio.position = "FL,FR"
+		monitor.channel-volumes = "true"
+		factory.id = "18"
+		client.id = "51"
+		node.driver = "true"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "53"
+	Formats:
+		pcm
+
+Source #65575
+	State: RUNNING
+	Name: alsa_output.pci-0000_08_00.4.analog-stereo.monitor
+	Description: Monitor of Starship/Matisse HD Audio Controller Analog Stereo
+	Driver: PipeWire
+	Sample Specification: s32le 2ch 48000Hz
+	Channel Map: front-left,front-right
+	Owner Module: 4294967295
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor of Sink: alsa_output.pci-0000_08_00.4.analog-stereo
+	Latency: 0 usec, configured 0 usec
+	Flags: HARDWARE DECIBEL_VOLUME LATENCY 
+	Properties:
+		object.path = "alsa:pcm:1:front:1:playback"
+		api.alsa.path = "front:1"
+		api.alsa.pcm.card = "1"
+		api.alsa.pcm.stream = "playback"
+		audio.channels = "2"
+		audio.position = "FL,FR"
+		device.routes = "2"
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "ALC892 Analog"
+		alsa.id = "ALC892 Analog"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "1"
+		alsa.card_name = "HD-Audio Generic"
+		alsa.long_card_name = "HD-Audio Generic at 0xfcb00000 irq 56"
+		alsa.driver_name = "snd_hda_intel"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		card.profile.device = "5"
+		device.id = "40"
+		factory.name = "api.alsa.pcm.sink"
+		priority.driver = "945"
+		priority.session = "945"
+		media.class = "Audio/Sink"
+		node.nick = "HD-Audio Generic"
+		node.name = "alsa_output.pci-0000_08_00.4.analog-stereo"
+		device.description = "Starship/Matisse HD Audio Controller Analog Stereo"
+		device.icon_name = "audio-card-analog"
+		device.bus = "pci"
+		device.bus_path = "pci-0000:08:00.4"
+		node.pause-on-idle = "false"
+		factory.id = "18"
+		client.id = "32"
+		node.driver = "true"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "39"
+		node.max-latency = "8192/48000"
+	Formats:
+		pcm
+
+Source #65722
+	State: SUSPENDED
+	Name: sink_vlc.monitor
+	Description: Monitor of sink_vlc Audio/Sink sink
+	Driver: PipeWire
+	Sample Specification: float32le 2ch 44100Hz
+	Channel Map: front-left,front-right
+	Owner Module: 4294967295
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor of Sink: sink_vlc
+	Latency: 0 usec, configured 0 usec
+	Flags: DECIBEL_VOLUME LATENCY 
+	Properties:
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "A NULL sink"
+		module.usage = "sink_name=<name of sink> sink_properties=<properties for the sink> format=<sample format> rate=<sample rate> channels=<number of channels> channel_map=<channel map>"
+		module.version = "0.3.38"
+		node.name = "sink_vlc"
+		audio.channels = "2"
+		audio.position = "FL,FR"
+		media.class = "Audio/Sink"
+		device.description = "sink_vlc Audio/Sink sink"
+		factory.name = "support.null-audio-sink"
+		object.linger = "true"
+		monitor.channel-volumes = "true"
+		factory.id = "18"
+		node.driver = "true"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "186"
+	Formats:
+		pcm

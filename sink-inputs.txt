@@ -1,0 +1,145 @@
+Sink Input #72
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 73
+	Sink: 186
+	Sample Specification: float32le 2ch 48000Hz
+	Channel Map: front-left,front-right
+	Format: pcm, format.sample_format = "\"float32le\""  format.rate = "48000"  format.channels = "2"  format.channel_map = "\"front-left,front-right\""
+	Corked: yes
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Sink Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "Videos"
+		media.role = "video"
+		application.icon_name = "org.gnome.Totem"
+		application.process.id = "18547"
+		application.process.user = "luko"
+		application.process.host = "jumpc"
+		application.process.binary = "totem"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":1"
+		application.process.machine_id = "34bc015d643f43bcacc73ae2a2b07426"
+		media.name = "Playback Stream"
+		node.rate = "1/48000"
+		stream.is-live = "true"
+		node.name = "Videos"
+		node.autoconnect = "true"
+		media.class = "Stream/Output/Audio"
+		adapt.follower.node = ""
+		object.register = "false"
+		factory.id = "6"
+		audio.adapt.follower = ""
+		factory.mode = "split"
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "73"
+		object.id = "72"
+		node.latency = "4320/48000"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.tlength = "76800"
+		pulse.attr.prebuf = "0"
+		pulse.attr.minreq = "3840"
+		module-stream-restore.id = "sink-input-by-media-role:video"
+
+Sink Input #218
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 216
+	Sink: 39
+	Sample Specification: float32le 2ch 48000Hz
+	Channel Map: front-left,front-right
+	Format: pcm, format.sample_format = "\"float32le\""  format.rate = "48000"  format.channels = "2"  format.channel_map = "\"front-left,front-right\""
+	Corked: no
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Sink Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		pipewire.client.access = "flatpak"
+		application.name = "Chromium"
+		application.process.id = "396"
+		application.process.user = "luko"
+		application.process.host = "jumpc"
+		application.process.binary = "franz"
+		application.language = "C"
+		window.x11.display = ":99.0"
+		application.process.machine_id = "34bc015d643f43bcacc73ae2a2b07426"
+		application.icon_name = "chromium-browser"
+		media.name = "Playback"
+		node.rate = "1/48000"
+		stream.is-live = "true"
+		node.name = "Chromium"
+		node.autoconnect = "true"
+		media.class = "Stream/Output/Audio"
+		adapt.follower.node = ""
+		object.register = "false"
+		factory.id = "6"
+		audio.adapt.follower = ""
+		factory.mode = "split"
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "216"
+		object.id = "218"
+		node.latency = "512/48000"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.tlength = "12288"
+		pulse.attr.prebuf = "10248"
+		pulse.attr.minreq = "2048"
+		module-stream-restore.id = "sink-input-by-application-name:Chromium"
+
+Sink Input #238
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 237
+	Sink: 39
+	Sample Specification: float32le 2ch 44100Hz
+	Channel Map: front-left,front-right
+	Format: pcm, format.sample_format = "\"float32le\""  format.rate = "44100"  format.channels = "2"  format.channel_map = "\"front-left,front-right\""
+	Corked: no
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Sink Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "spotify"
+		application.process.id = "45922"
+		application.process.user = "luko"
+		application.process.host = "jumpc"
+		application.process.binary = "spotify"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":1"
+		application.process.machine_id = "34bc015d643f43bcacc73ae2a2b07426"
+		media.role = "music"
+		media.name = "Spotify"
+		node.rate = "1/44100"
+		stream.is-live = "true"
+		node.name = "spotify"
+		node.autoconnect = "true"
+		media.class = "Stream/Output/Audio"
+		adapt.follower.node = ""
+		object.register = "false"
+		factory.id = "6"
+		audio.adapt.follower = ""
+		factory.mode = "split"
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "237"
+		object.id = "238"
+		node.latency = "43218/44100"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.tlength = "705600"
+		pulse.attr.prebuf = "0"
+		pulse.attr.minreq = "7056"
+		module-stream-restore.id = "sink-input-by-media-role:music"
